@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <script src="script.js"></script>
+    </head>
+<body>
+
+<h2>What Can JavaScript Do?</h2>
+<h3>Demo of changing content internally</h3>
+
+<p id="javaold">JavaScript can change HTML content.</p><!--this is the old line-->
+
+<!--this will change the inner HTML content-->
+<button type="button" onclick='document.getElementById("javaold").innerHTML = "Hello JavaScript!"'>Click Me!</button>
+<h3>Demo of changing content through external file</h3>
+<p id="changecontent"> JavaScript can change the language externally too</p>
+<button type="button" ondblclick="change()">Double click to try changing externally</button>
+<h3>Advantages of placing files externally</h3>
+<p>Placing scripts in external files has some advantages:
+<ul>
+   <li> It separates HTML and code</li>
+    <li>It makes HTML and JavaScript easier to read and maintain</li>
+   <li>Cached JavaScript files can speed up page loads </li> 
+</p>
+<h3>Ways to write content in Javascript</h3>
+JavaScript can "display" data in different ways:
+<ol>
+<li>Writing into an HTML element, using innerHTML.</li>
+<li>Writing into the HTML output using document.write().</li>
+<li>Writing into an alert box, using window.alert().</li>
+<li>Writing into the browser console, using console.log().</li>
+</ol>
+
+
+</body>
+</html>
